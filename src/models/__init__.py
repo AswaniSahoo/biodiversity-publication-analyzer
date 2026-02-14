@@ -1,1 +1,5 @@
-"""ML classification models for publication classification."""
+"""Classification models module."""
+
+from src.models.baseline_classifier import BaselineClassifier
+
+__all__ = ["BaselineClassifier"]
