@@ -1,0 +1,82 @@
+# ================================================
+# Biodiversity Publication Analyzer — Configuration
+# ================================================
+
+# --- Europe PMC API ---
+api:
+  base_url: "https://www.ebi.ac.uk/europepmc/webservices/rest"
+  annotations_url: "https://www.ebi.ac.uk/europepmc/annotations_api"
+  format: "json"
+  page_size: 100
+  rate_limit_delay: 0.5  # seconds between requests
+  max_retries: 3
+
+# --- Data Collection ---
+data:
+  # Positive queries (biodiversity genomics related)
+  positive_queries:
+    - '"Darwin Tree of Life"'
+    - '"Earth BioGenome Project"'
+    - '"Genome Note" AND "Wellcome Open Research"'
+    - '"reference genome" AND "biodiversity"'
+    - '"genome assembly" AND ("insect" OR "plant" OR "fungi")'
+    - '"Tree of Life" AND "genome sequencing"'
+    - '"VGP" AND "vertebrate genome"'
+    - '"INSDC" AND "genome assembly"'
+  # Negative queries (general biology, not genomics-focused)
+  negative_queries:
+    - '"clinical trial" AND "drug"'
+    - '"epidemiology" AND "cohort study"'
+    - '"psychology" AND "behavior"'
+    - '"cell culture" AND "in vitro"'
+  max_articles_per_query: 500
+  min_year: 2018
+  max_year: 2025
+  # Split ratios
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+# --- Dictionary ---
+dictionary:
+  sources:
+    - "genome_projects"     # DToL, EBP, VGP, i5K, ERGA, etc.
+    - "sequencing_terms"    # Assembly, scaffolding, Hi-C, PacBio, etc.
+    - "tools_databases"     # BUSCO, BLAST, GenBank, ENA, etc.
+    - "species_terms"       # Taxonomic terms, phyla names
+  output_path: "data/dictionaries/biodiversity_terms.json"
+
+# --- Baseline Model ---
+baseline:
+  vectorizer: "tfidf"
+  max_features: 10000
+  ngram_range: [1, 2]
+  models:
+    - "logistic_regression"
+    - "svm"
+    - "random_forest"
+
+# --- Transformer Model ---
+transformer:
+  model_name: "allenai/scibert_scivocab_uncased"
+  max_length: 512
+  batch_size: 16
+  learning_rate: 2.0e-5
+  epochs: 5
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+
+# --- Analysis ---
+analysis:
+  citation_window_years: 3
+  top_keywords: 50
+  trend_granularity: "yearly"
+
+# --- Paths ---
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  dictionaries: "data/dictionaries"
+  models: "results/models"
+  figures: "results/figures"
+  reports: "results/reports"
