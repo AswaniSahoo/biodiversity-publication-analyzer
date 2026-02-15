@@ -37,9 +37,9 @@ results/models/
 *.bin
 *.safetensors
 
-# Results (regeneratable)
-results/figures/
-results/reports/
+# Results — keep figures & reports tracked for README
+# results/figures/
+# results/reports/
 
 # OS
 .DS_Store

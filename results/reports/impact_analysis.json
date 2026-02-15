@@ -1,0 +1,411 @@
+{
+  "dataset": {
+    "total": 1348,
+    "positive": 674,
+    "negative": 674
+  },
+  "model_comparison": [
+    {
+      "model": "TF-IDF + logistic_regression",
+      "type": "baseline",
+      "accuracy": 0.9950738916256158,
+      "precision": 1.0,
+      "recall": 0.9900990099009901,
+      "f1": 0.9950248756218906,
+      "auc_roc": 1.0
+    },
+    {
+      "model": "TF-IDF + svm",
+      "type": "baseline",
+      "accuracy": 0.9950738916256158,
+      "precision": 1.0,
+      "recall": 0.9900990099009901,
+      "f1": 0.9950248756218906,
+      "auc_roc": 1.0
+    },
+    {
+      "model": "TF-IDF + random_forest",
+      "type": "baseline",
+      "accuracy": 0.9901477832512315,
+      "precision": 0.9900990099009901,
+      "recall": 0.9900990099009901,
+      "f1": 0.9900990099009901,
+      "auc_roc": 0.9999029314696175
+    },
+    {
+      "model": "scibert_scivocab_uncased",
+      "type": "transformer",
+      "accuracy": 0.9950738916256158,
+      "precision": 1.0,
+      "recall": 0.9900990099009901,
+      "f1": 0.9950248756218906,
+      "auc_roc": 1.0
+    }
+  ],
+  "impact_metrics": {
+    "dataset_size": 674,
+    "citations": {
+      "total_citations": 11005,
+      "mean_citations": 16.327893175074184,
+      "median_citations": 0.0,
+      "max_citations": 2582,
+      "min_citations": 0,
+      "std_citations": 138.65288275187828,
+      "articles_with_citations": 177,
+      "articles_without_citations": 497,
+      "highly_cited_10plus": 54,
+      "highly_cited_50plus": 22
+    },
+    "journals": {
+      "total_journals": 0,
+      "total_articles_with_journal": 0,
+      "top_journals": []
+    },
+    "open_access": {
+      "total_articles": 674,
+      "open_access_count": 553,
+      "closed_access_count": 121,
+      "open_access_rate": 82.0
+    },
+    "yearly_stats": [
+      {
+        "year": 2018,
+        "count": 2,
+        "mean_citations": 5.5,
+        "total_citations": 11
+      },
+      {
+        "year": 2019,
+        "count": 2,
+        "mean_citations": 49.0,
+        "total_citations": 98
+      },
+      {
+        "year": 2020,
+        "count": 9,
+        "mean_citations": 191.11111111111111,
+        "total_citations": 1720
+      },
+      {
+        "year": 2021,
+        "count": 14,
+        "mean_citations": 270.42857142857144,
+        "total_citations": 3786
+      },
+      {
+        "year": 2022,
+        "count": 21,
+        "mean_citations": 201.23809523809524,
+        "total_citations": 4226
+      },
+      {
+        "year": 2023,
+        "count": 23,
+        "mean_citations": 13.478260869565217,
+        "total_citations": 310
+      },
+      {
+        "year": 2024,
+        "count": 44,
+        "mean_citations": 15.772727272727273,
+        "total_citations": 694
+      },
+      {
+        "year": 2025,
+        "count": 547,
+        "mean_citations": 0.2851919561243144,
+        "total_citations": 156
+      },
+      {
+        "year": 2026,
+        "count": 12,
+        "mean_citations": 0.3333333333333333,
+        "total_citations": 4
+      }
+    ]
+  },
+  "trend_summary": {
+    "yearly_counts": {
+      "2018": 2,
+      "2019": 2,
+      "2020": 9,
+      "2021": 14,
+      "2022": 21,
+      "2023": 23,
+      "2024": 44,
+      "2025": 547,
+      "2026": 12
+    },
+    "growth_rates": {
+      "2019": 0.0,
+      "2020": 350.0,
+      "2021": 55.6,
+      "2022": 50.0,
+      "2023": 9.5,
+      "2024": 91.3,
+      "2025": 1143.2,
+      "2026": -97.8
+    },
+    "cumulative": {
+      "2018": 2,
+      "2019": 4,
+      "2020": 13,
+      "2021": 27,
+      "2022": 48,
+      "2023": 71,
+      "2024": 115,
+      "2025": 662,
+      "2026": 674
+    },
+    "total_publications": 674,
+    "year_range": "2018\u20132026",
+    "peak_year": 2025,
+    "peak_count": 547,
+    "average_per_year": 74.9,
+    "average_growth_rate": 200.2
+  },
+  "top_keywords_positive": [
+    [
+      "genome",
+      0.0531
+    ],
+    [
+      "assembly",
+      0.0432
+    ],
+    [
+      "genome sequence",
+      0.0391
+    ],
+    [
+      "sequence",
+      0.0385
+    ],
+    [
+      "chromosomal",
+      0.0336
+    ],
+    [
+      "length",
+      0.0291
+    ],
+    [
+      "assembled",
+      0.0273
+    ],
+    [
+      "megabases",
+      0.027
+    ],
+    [
+      "genome assembly",
+      0.0262
+    ],
+    [
+      "species",
+      0.0243
+    ],
+    [
+      "lepidoptera",
+      0.0234
+    ],
+    [
+      "present",
+      0.0227
+    ],
+    [
+      "scaffolded",
+      0.0226
+    ],
+    [
+      "chromosome",
+      0.0225
+    ],
+    [
+      "abstract",
+      0.0225
+    ],
+    [
+      "pseudomolecules",
+      0.0224
+    ],
+    [
+      "chromosomal pseudomolecules",
+      0.0224
+    ],
+    [
+      "journal",
+      0.0223
+    ],
+    [
+      "title",
+      0.0223
+    ],
+    [
+      "haplotype",
+      0.022
+    ],
+    [
+      "mitochondrial",
+      0.0219
+    ],
+    [
+      "title genome",
+      0.0218
+    ],
+    [
+      "abstract present",
+      0.0218
+    ],
+    [
+      "total",
+      0.0217
+    ],
+    [
+      "kilobases",
+      0.0216
+    ],
+    [
+      "present genome",
+      0.0215
+    ],
+    [
+      "keywords",
+      0.0212
+    ],
+    [
+      "mitochondrial genome",
+      0.0212
+    ],
+    [
+      "journal keywords",
+      0.0212
+    ],
+    [
+      "genome assembled",
+      0.0209
+    ]
+  ],
+  "top_keywords_negative": [
+    [
+      "study",
+      0.0234
+    ],
+    [
+      "cell",
+      0.0231
+    ],
+    [
+      "clinical",
+      0.0223
+    ],
+    [
+      "trial",
+      0.0182
+    ],
+    [
+      "culture",
+      0.0181
+    ],
+    [
+      "abstract",
+      0.0173
+    ],
+    [
+      "journal",
+      0.0171
+    ],
+    [
+      "risk",
+      0.0171
+    ],
+    [
+      "behavior",
+      0.017
+    ],
+    [
+      "title",
+      0.017
+    ],
+    [
+      "drug",
+      0.0168
+    ],
+    [
+      "vitro",
+      0.0167
+    ],
+    [
+      "cells",
+      0.0166
+    ],
+    [
+      "results",
+      0.0162
+    ],
+    [
+      "keywords",
+      0.0161
+    ],
+    [
+      "journal keywords",
+      0.016
+    ],
+    [
+      "using",
+      0.0158
+    ],
+    [
+      "based",
+      0.0155
+    ],
+    [
+      "patients",
+      0.0154
+    ],
+    [
+      "cohort",
+      0.015
+    ],
+    [
+      "treatment",
+      0.0146
+    ],
+    [
+      "research",
+      0.0142
+    ],
+    [
+      "cell culture",
+      0.0142
+    ],
+    [
+      "associated",
+      0.014
+    ],
+    [
+      "model",
+      0.014
+    ],
+    [
+      "clinical trial",
+      0.0139
+    ],
+    [
+      "development",
+      0.0135
+    ],
+    [
+      "models",
+      0.0135
+    ],
+    [
+      "analysis",
+      0.0133
+    ],
+    [
+      "data",
+      0.0131
+    ]
+  ]
+}

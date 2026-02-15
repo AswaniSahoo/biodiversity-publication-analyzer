@@ -1,0 +1,600 @@
+{
+  "logistic_regression": {
+    "val": {
+      "model": "logistic_regression",
+      "split": "val",
+      "accuracy": 0.995049504950495,
+      "precision": 1.0,
+      "recall": 0.9900990099009901,
+      "f1": 0.9950248756218906,
+      "auc_roc": 1.0,
+      "confusion_matrix": [
+        [
+          101,
+          0
+        ],
+        [
+          1,
+          100
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9901960784313726,
+          "recall": 1.0,
+          "f1-score": 0.9950738916256158,
+          "support": 101.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9950248756218906,
+          "support": 101.0
+        },
+        "accuracy": 0.995049504950495,
+        "macro avg": {
+          "precision": 0.9950980392156863,
+          "recall": 0.995049504950495,
+          "f1-score": 0.9950493836237532,
+          "support": 202.0
+        },
+        "weighted avg": {
+          "precision": 0.9950980392156862,
+          "recall": 0.995049504950495,
+          "f1-score": 0.9950493836237533,
+          "support": 202.0
+        }
+      }
+    },
+    "test": {
+      "model": "logistic_regression",
+      "split": "test",
+      "accuracy": 0.9950738916256158,
+      "precision": 1.0,
+      "recall": 0.9900990099009901,
+      "f1": 0.9950248756218906,
+      "auc_roc": 1.0,
+      "confusion_matrix": [
+        [
+          102,
+          0
+        ],
+        [
+          1,
+          100
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9902912621359223,
+          "recall": 1.0,
+          "f1-score": 0.9951219512195122,
+          "support": 102.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9950248756218906,
+          "support": 101.0
+        },
+        "accuracy": 0.9950738916256158,
+        "macro avg": {
+          "precision": 0.9951456310679612,
+          "recall": 0.995049504950495,
+          "f1-score": 0.9950734134207013,
+          "support": 203.0
+        },
+        "weighted avg": {
+          "precision": 0.9951217179205126,
+          "recall": 0.9950738916256158,
+          "f1-score": 0.9950736525231585,
+          "support": 203.0
+        }
+      }
+    },
+    "top_features": {
+      "positive": [
+        [
+          "genome",
+          3.859
+        ],
+        [
+          "assembly",
+          2.4204
+        ],
+        [
+          "species",
+          2.0302
+        ],
+        [
+          "genomic",
+          1.7512
+        ],
+        [
+          "sequence",
+          1.665
+        ],
+        [
+          "sequencing",
+          1.5725
+        ],
+        [
+          "genome assembly",
+          1.5059
+        ],
+        [
+          "genomes",
+          1.4791
+        ],
+        [
+          "genes",
+          1.4704
+        ],
+        [
+          "genome sequence",
+          1.4681
+        ],
+        [
+          "chromosome",
+          1.3989
+        ],
+        [
+          "reference",
+          1.278
+        ],
+        [
+          "chromosomal",
+          1.2622
+        ],
+        [
+          "genetic",
+          1.2295
+        ],
+        [
+          "diversity",
+          1.2222
+        ]
+      ],
+      "negative": [
+        [
+          "clinical",
+          -1.4723
+        ],
+        [
+          "cell",
+          -1.4163
+        ],
+        [
+          "behavior",
+          -1.2164
+        ],
+        [
+          "culture",
+          -1.2034
+        ],
+        [
+          "vitro",
+          -1.1605
+        ],
+        [
+          "trial",
+          -1.151
+        ],
+        [
+          "drug",
+          -1.1287
+        ],
+        [
+          "cohort",
+          -0.9735
+        ],
+        [
+          "cell culture",
+          -0.9704
+        ],
+        [
+          "cells",
+          -0.9646
+        ],
+        [
+          "risk",
+          -0.9542
+        ],
+        [
+          "patients",
+          -0.9343
+        ],
+        [
+          "treatment",
+          -0.8822
+        ],
+        [
+          "study",
+          -0.8782
+        ],
+        [
+          "participants",
+          -0.8774
+        ]
+      ]
+    }
+  },
+  "svm": {
+    "val": {
+      "model": "svm",
+      "split": "val",
+      "accuracy": 0.995049504950495,
+      "precision": 1.0,
+      "recall": 0.9900990099009901,
+      "f1": 0.9950248756218906,
+      "auc_roc": 1.0,
+      "confusion_matrix": [
+        [
+          101,
+          0
+        ],
+        [
+          1,
+          100
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9901960784313726,
+          "recall": 1.0,
+          "f1-score": 0.9950738916256158,
+          "support": 101.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9950248756218906,
+          "support": 101.0
+        },
+        "accuracy": 0.995049504950495,
+        "macro avg": {
+          "precision": 0.9950980392156863,
+          "recall": 0.995049504950495,
+          "f1-score": 0.9950493836237532,
+          "support": 202.0
+        },
+        "weighted avg": {
+          "precision": 0.9950980392156862,
+          "recall": 0.995049504950495,
+          "f1-score": 0.9950493836237533,
+          "support": 202.0
+        }
+      }
+    },
+    "test": {
+      "model": "svm",
+      "split": "test",
+      "accuracy": 0.9950738916256158,
+      "precision": 1.0,
+      "recall": 0.9900990099009901,
+      "f1": 0.9950248756218906,
+      "auc_roc": 1.0,
+      "confusion_matrix": [
+        [
+          102,
+          0
+        ],
+        [
+          1,
+          100
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9902912621359223,
+          "recall": 1.0,
+          "f1-score": 0.9951219512195122,
+          "support": 102.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9950248756218906,
+          "support": 101.0
+        },
+        "accuracy": 0.9950738916256158,
+        "macro avg": {
+          "precision": 0.9951456310679612,
+          "recall": 0.995049504950495,
+          "f1-score": 0.9950734134207013,
+          "support": 203.0
+        },
+        "weighted avg": {
+          "precision": 0.9951217179205126,
+          "recall": 0.9950738916256158,
+          "f1-score": 0.9950736525231585,
+          "support": 203.0
+        }
+      }
+    },
+    "top_features": {
+      "positive": [
+        [
+          "genome",
+          1.9914
+        ],
+        [
+          "species",
+          1.1413
+        ],
+        [
+          "genomic",
+          1.0558
+        ],
+        [
+          "assembly",
+          1.0274
+        ],
+        [
+          "genes",
+          0.8469
+        ],
+        [
+          "genetic",
+          0.8236
+        ],
+        [
+          "sequencing",
+          0.8216
+        ],
+        [
+          "genomes",
+          0.7683
+        ],
+        [
+          "sequence",
+          0.7656
+        ],
+        [
+          "diversity",
+          0.7269
+        ],
+        [
+          "evolution",
+          0.6945
+        ],
+        [
+          "chromosome",
+          0.6606
+        ],
+        [
+          "reference",
+          0.6372
+        ],
+        [
+          "genome assembly",
+          0.631
+        ],
+        [
+          "genome sequence",
+          0.6233
+        ]
+      ],
+      "negative": [
+        [
+          "behavior",
+          -0.9491
+        ],
+        [
+          "cell",
+          -0.9002
+        ],
+        [
+          "clinical",
+          -0.7504
+        ],
+        [
+          "culture",
+          -0.7221
+        ],
+        [
+          "vitro",
+          -0.6967
+        ],
+        [
+          "drug",
+          -0.6708
+        ],
+        [
+          "cell culture",
+          -0.6249
+        ],
+        [
+          "trial",
+          -0.6064
+        ],
+        [
+          "cells",
+          -0.5757
+        ],
+        [
+          "participants",
+          -0.5161
+        ],
+        [
+          "model",
+          -0.5101
+        ],
+        [
+          "cohort",
+          -0.4982
+        ],
+        [
+          "models",
+          -0.4828
+        ],
+        [
+          "risk",
+          -0.4628
+        ],
+        [
+          "effects",
+          -0.4595
+        ]
+      ]
+    }
+  },
+  "random_forest": {
+    "val": {
+      "model": "random_forest",
+      "split": "val",
+      "accuracy": 0.9900990099009901,
+      "precision": 1.0,
+      "recall": 0.9801980198019802,
+      "f1": 0.99,
+      "auc_roc": 0.9999019703950592,
+      "confusion_matrix": [
+        [
+          101,
+          0
+        ],
+        [
+          2,
+          99
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9805825242718447,
+          "recall": 1.0,
+          "f1-score": 0.9901960784313726,
+          "support": 101.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 0.9801980198019802,
+          "f1-score": 0.99,
+          "support": 101.0
+        },
+        "accuracy": 0.9900990099009901,
+        "macro avg": {
+          "precision": 0.9902912621359223,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9900980392156863,
+          "support": 202.0
+        },
+        "weighted avg": {
+          "precision": 0.9902912621359222,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9900980392156863,
+          "support": 202.0
+        }
+      }
+    },
+    "test": {
+      "model": "random_forest",
+      "split": "test",
+      "accuracy": 0.9901477832512315,
+      "precision": 0.9900990099009901,
+      "recall": 0.9900990099009901,
+      "f1": 0.9900990099009901,
+      "auc_roc": 0.9999029314696175,
+      "confusion_matrix": [
+        [
+          101,
+          1
+        ],
+        [
+          1,
+          100
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9901960784313726,
+          "recall": 0.9901960784313726,
+          "f1-score": 0.9901960784313726,
+          "support": 102.0
+        },
+        "1": {
+          "precision": 0.9900990099009901,
+          "recall": 0.9900990099009901,
+          "f1-score": 0.9900990099009901,
+          "support": 101.0
+        },
+        "accuracy": 0.9901477832512315,
+        "macro avg": {
+          "precision": 0.9901475441661813,
+          "recall": 0.9901475441661813,
+          "f1-score": 0.9901475441661813,
+          "support": 203.0
+        },
+        "weighted avg": {
+          "precision": 0.9901477832512315,
+          "recall": 0.9901477832512315,
+          "f1-score": 0.9901477832512315,
+          "support": 203.0
+        }
+      }
+    },
+    "top_features": {
+      "important": [
+        [
+          "genome",
+          0.05
+        ],
+        [
+          "genome assembly",
+          0.0286
+        ],
+        [
+          "assembly",
+          0.0272
+        ],
+        [
+          "title",
+          0.019
+        ],
+        [
+          "genomic",
+          0.018
+        ],
+        [
+          "sequence",
+          0.0171
+        ],
+        [
+          "species",
+          0.0166
+        ],
+        [
+          "journal",
+          0.0143
+        ],
+        [
+          "genomes",
+          0.0132
+        ],
+        [
+          "genome sequence",
+          0.0129
+        ],
+        [
+          "reference",
+          0.0128
+        ],
+        [
+          "assembled",
+          0.0127
+        ],
+        [
+          "present",
+          0.0122
+        ],
+        [
+          "megabases",
+          0.0118
+        ],
+        [
+          "genes",
+          0.0118
+        ]
+      ]
+    }
+  }
+}
