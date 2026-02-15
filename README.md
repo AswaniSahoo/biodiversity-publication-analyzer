@@ -2,7 +2,7 @@
 
 > NLP-powered tool to discover, classify, and analyze the impact of biodiversity genomics publications using Europe PMC API.
 
-**Built as preparation for GSoC 2026 — Wellcome Sanger Institute / EMBL-EBI**
+
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
@@ -322,7 +322,3 @@ transformer:
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
-
-<p align="center">
-  <i>Built with ❤️ as preparation for GSoC 2026 — AI for Science</i>
-</p>
