@@ -287,9 +287,9 @@ transformer:
 
 ---
 
-## 🎯 How This Maps to the Sanger GSoC Project
+## 🎯 How This Maps to Biodiversity Genomics Research
 
-| Sanger GSoC Step | Our Implementation |
+| Research Step | Our Implementation |
 |---|---|
 | 1. Build specialized dictionary | ✅ `dictionary_builder.py` — 236 terms, 4 categories |
 | 2. Data collection from Europe PMC | ✅ `europepmc_client.py` — full API client with pagination |
